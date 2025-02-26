@@ -10,16 +10,12 @@ vim.keymap.set('n', '<leader>pg', telescope.git_files, { desc = '[P]roject [G]it
 vim.keymap.set('n', '<leader>ps', telescope.grep_string, { desc = '[P]roject [S]earch' })
 
 -- Formatting
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '*',
-  callback = function(args)
-    require('conform').format { bufnr = args.buf }
-  end,
-})
+vim.keymap.set('n', '<leader>ff', ':Format<CR>', { desc = '[F]ile [F]ormat' })
 
 -- Which-key
 local whichkey = require 'which-key'
 
 whichkey.add {
   { '<leader>p', group = 'Project' },
+  { '<leader>f', group = 'File' },
 }

@@ -37,11 +37,19 @@ require('lazy').setup {
     },
   },
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
-  { 'neovim/nvim-lspconfig' },
-  { 'hrsh7th/cmp-nvim-lsp' },
-  { 'hrsh7th/nvim-cmp' },
   {
     'stevearc/conform.nvim',
     opts = {},
   },
+  {
+    'williamboman/mason.nvim',
+  },
+  'neovim/nvim-lspconfig',
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  'hrsh7th/cmp-cmdline',
+  'hrsh7th/nvim-cmp',
+{ 'echasnovski/mini.nvim', version = false },
+
 }
