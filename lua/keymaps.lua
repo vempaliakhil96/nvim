@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>pe', vim.cmd.Ex, { desc = '[P]roject [E]xplorer' })
 
 local telescope = require 'telescope.builtin'
+local cmp = require 'cmp'
 
 -- Telescope stuff
 vim.keymap.set('n', '<leader>pf', telescope.find_files, { desc = '[P]roject [F]iles' })
@@ -19,3 +20,7 @@ whichkey.add {
   { '<leader>p', group = 'Project' },
   { '<leader>f', group = 'File' },
 }
+
+-- Convinience
+vim.keymap.set('n', 'L', '$', { desc = 'End of line' })
+vim.keymap.set('n', 'H', '^', { desc = 'Start of line' })
