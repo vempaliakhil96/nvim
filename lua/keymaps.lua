@@ -3,7 +3,6 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>pe', vim.cmd.Ex, { desc = '[P]roject [E]xplorer' })
 
 local telescope = require 'telescope.builtin'
-local cmp = require 'cmp'
 
 -- Telescope stuff
 vim.keymap.set('n', '<leader>pf', telescope.find_files, { desc = '[P]roject [F]iles' })
