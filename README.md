@@ -16,3 +16,6 @@
 - [ ] Add a plugin for the status line.
 - [ ] Add a plugin for the file explorer.
 - [ ] Add plugin for LLM completion.
+- [ ] Add a plugin for git integration.
+- [ ] Add a plugin for debugging.
+
