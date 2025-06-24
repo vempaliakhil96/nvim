@@ -53,4 +53,5 @@ require('lazy').setup {
   'hrsh7th/cmp-cmdline',
   'hrsh7th/nvim-cmp',
   { 'echasnovski/mini.nvim', version = false },
+  'github/copilot.vim',
 }
