@@ -23,3 +23,6 @@ whichkey.add {
 -- Convinience
 vim.keymap.set('n', 'L', '$', { desc = 'End of line' })
 vim.keymap.set('n', 'H', '^', { desc = 'Start of line' })
+
+-- Toggle b/w open panes
+vim.keymap.set('n', '<leader>t', '<C-w>w', { desc = 'Toggle b/w open panes' })
