@@ -54,4 +54,10 @@ require('lazy').setup {
   'hrsh7th/nvim-cmp',
   { 'echasnovski/mini.nvim', version = false },
   'github/copilot.vim',
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+  },
 }
