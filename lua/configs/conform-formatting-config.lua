@@ -2,7 +2,7 @@ require('conform').setup {
   formatters_by_ft = {
     lua = { 'stylua' },
     -- Conform will run multiple formatters sequentially
-    python = { 'ruff', 'isort', 'black' , lsp_format = 'fallback' },
+    python = { 'ruff_format', 'ruff_fix', 'ruff_organize_imports', 'isort', 'black', lsp_format = 'fallback' },
     -- You can customize some of the format options for the filetype (:help conform.format)
     rust = { 'rustfmt', lsp_format = 'fallback' },
     -- Conform will run the first available formatter
