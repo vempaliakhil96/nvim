@@ -3,8 +3,8 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>pe', vim.cmd.Ex, { desc = '[P]roject [E]xplorer' })
 
 -- Convinience
-vim.keymap.set('n', 'L', '$', { desc = 'End of line' })
-vim.keymap.set('n', 'H', '^', { desc = 'Start of line' })
+vim.keymap.set({'n', 'v'}, 'L', '$', { desc = 'End of line' })
+vim.keymap.set({'n', 'v'}, 'H', '^', { desc = 'Start of line' })
 
 -- Copy/Paste
 vim.keymap.set('n', '<leader>y', '"+y', { desc = '[Y]ank to system clipboard' })
