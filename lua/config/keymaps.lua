@@ -4,3 +4,6 @@
 
 -- CodeCompanion Chat
 vim.keymap.set("n", "go", ":CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
+
+-- Save current buffer with leader+w
+vim.keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, silent = true })
