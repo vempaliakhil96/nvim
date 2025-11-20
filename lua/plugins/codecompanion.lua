@@ -16,6 +16,12 @@ return {
               llm = "assistant",
               user = "user",
             },
+            opts = {
+              verbose_output = true,
+            },
+            env = {
+              USER_EMAIL = "avempali@atlassian.com",
+            },
             commands = {
               default = {
                 "uv",
