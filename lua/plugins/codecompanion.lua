@@ -27,7 +27,7 @@ return {
                 "uv",
                 "run",
                 "--project",
-                "/Users/avempali/Documents/repos/acra-python",
+                "/Users/avempali/Documents/repos/acra-python/",
                 "rovodev",
                 "acp",
               },
@@ -61,10 +61,10 @@ return {
         adapter = "rovodev",
       },
       inline = {
-        adapter = "rovodev",
+        adapter = "copilot",
       },
       cmd = {
-        adapter = "rovodev",
+        adapter = "copilot",
       },
     },
     -- NOTE: The log_level is in `opts.opts`
