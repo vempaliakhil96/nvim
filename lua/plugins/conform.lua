@@ -6,6 +6,8 @@ return {
       fish = { "fish_indent" },
       sh = { "shfmt" },
       json = { "prettier" },
+      python = { "ruff" },
+      rust = { "rustfmt" },
     },
   },
 }
