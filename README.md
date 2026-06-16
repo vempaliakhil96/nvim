@@ -7,7 +7,6 @@ This README documents what diverges from the upstream template.
 
 Configured in `lazyvim.json`:
 
-- `ai.copilot` (with `vim.g.ai_cmp = false` so Copilot shows ghost text instead of going through `nvim-cmp`)
 - `coding.yanky`
 - `dap.core`
 - `lang.kotlin`, `lang.sql`, `lang.typescript`, `lang.yaml`, `lang.rust`, `lang.toml`
@@ -16,7 +15,6 @@ Configured in `lazyvim.json`:
 
 ## Options (`lua/config/options.lua`)
 
-- `vim.g.ai_cmp = false` — Copilot ghost text instead of completion-menu entries.
 - `vim.o.exrc = true` — allow project-local `.nvim.lua` files (trust them with `:lua vim.secure.trust(...)`).
 - Block cursor in every mode via `guicursor` and explicit white `Cursor` / `lCursor` highlights.
 
@@ -48,7 +46,7 @@ VS Code-only keymaps live in `lua/plugins/vscode.lua` and only load when `vim.g.
 
 ### CodeCompanion — `codecompanion.lua`
 - `olimorris/codecompanion.nvim` with a custom ACP adapter `rovodev` that shells out to the local `acra-python` project via `uv run rovodev acp`.
-- Chat strategy uses `rovodev`; inline and cmd strategies use `copilot`. Log level is `DEBUG`.
+- Chat, inline, and cmd strategies use `rovodev`. Log level is `DEBUG`.
 
 ### Kotlin — `kotlin.lua`
 - Installs `kotlin-lsp`, `ktlint`, and `kotlin-debug-adapter` via Mason.
@@ -69,4 +67,4 @@ VS Code-only keymaps live in `lua/plugins/vscode.lua` and only load when `vim.g.
 
 - Format Lua with `stylua` after edits (see `stylua.toml`).
 - The active side panel is **Snacks Explorer**, not Neo-tree — check `lazy-lock.json` / `lazyvim.json` before changing side-panel behavior.
-- Copilot is `zbirenbaum/copilot.lua` (via the LazyVim extra). `vim.b.copilot_enabled` has no effect; disable per-project with `vim.cmd("Copilot disable")` inside a trusted `.nvim.lua`.
+- GitHub Copilot is disabled; the LazyVim Copilot extra is not enabled.

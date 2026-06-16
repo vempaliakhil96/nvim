@@ -61,10 +61,10 @@ return {
         adapter = "rovodev",
       },
       inline = {
-        adapter = "copilot",
+        adapter = "rovodev",
       },
       cmd = {
-        adapter = "copilot",
+        adapter = "rovodev",
       },
     },
     -- NOTE: The log_level is in `opts.opts`
