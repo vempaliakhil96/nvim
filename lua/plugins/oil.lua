@@ -1,3 +1,5 @@
+local startup_cwd = vim.uv.cwd()
+
 return {
   {
     "folke/snacks.nvim",
@@ -18,30 +20,30 @@ return {
       {
         "<leader>e",
         function()
-          require("oil").toggle_float(LazyVim.root())
+          require("oil").toggle_float(startup_cwd)
         end,
-        desc = "Explorer Oil (root dir)",
+        desc = "Explorer Oil (startup dir)",
       },
       {
         "<leader>E",
         function()
-          require("oil").toggle_float(vim.uv.cwd())
+          require("oil").toggle_float(startup_cwd)
         end,
-        desc = "Explorer Oil (cwd)",
+        desc = "Explorer Oil (startup dir)",
       },
       {
         "<leader>fe",
         function()
-          require("oil").toggle_float(LazyVim.root())
+          require("oil").toggle_float(startup_cwd)
         end,
-        desc = "Explorer Oil (root dir)",
+        desc = "Explorer Oil (startup dir)",
       },
       {
         "<leader>fE",
         function()
-          require("oil").toggle_float(vim.uv.cwd())
+          require("oil").toggle_float(startup_cwd)
         end,
-        desc = "Explorer Oil (cwd)",
+        desc = "Explorer Oil (startup dir)",
       },
     },
     opts = {
