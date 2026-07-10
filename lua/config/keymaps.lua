@@ -16,3 +16,6 @@ vim.keymap.set({ "i", "c" }, "<M-BS>", "<C-w>", { noremap = true, silent = true 
 vim.keymap.set({ "i", "c" }, "<M-Del>", "<C-w>", { noremap = true, silent = true })
 vim.keymap.set({ "i", "c" }, "<Esc><BS>", "<C-w>", { noremap = true, silent = true })
 vim.keymap.set({ "i", "c" }, "<Esc><Del>", "<C-w>", { noremap = true, silent = true })
+
+-- pasting over a selection no longer clobbers your clipboard
+vim.cmd([[ xnoremap <expr> p 'pgv"'.v:register.'y']])
