@@ -1,5 +1,6 @@
 ## Neovim Configuration
 
+- Commit and push changes directly to `main` in this repository; do not create feature branches or pull requests unless explicitly requested.
 - Verify which explorer plugin is active before changing side-panel behavior. In this config, the side panel may be Snacks Explorer rather than Neo-tree; inspect `lazy-lock.json`, `lazyvim.json`, and `lua/plugins/` first.
 - After editing Lua plugin config, run `stylua` on changed files and a headless Neovim load check.
 - When `formatters_by_ft` is explicitly set in `lua/plugins/conform.lua`, LazyVim language extras (e.g. `lang.rust`) cannot inject their own formatters. New languages must be added to the existing table manually.
