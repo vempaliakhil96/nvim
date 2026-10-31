@@ -6,7 +6,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" },
     opts = {
       heading = {
-        backgrounds = {},
+        width = "block",
       },
     },
   },
